@@ -33,7 +33,7 @@
     font-size: 16px;
 }
 .page-container {
-    /* border: 1px solid red; */
+    /* outline: 1px solid red; */
     margin: 0 auto;
 }
 header {
@@ -42,13 +42,16 @@ header {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
+    /* outline: 1px solid blue; */
+    padding: 0 30px;
 }
 nav {
     max-width: 1200px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin: 10px 10px;
-    /* border: 1px solid red;  */
+    /* outline: 1px solid red;  */
 }
 
 #logo {
@@ -57,7 +60,7 @@ nav {
 
 .menu ul {
     display: flex;
-    margin: 0 250px 0 50px;
+    /* margin: 0 250px 0 50px; */
     list-style: none;    
 }
 .menu ul li {
@@ -76,6 +79,7 @@ nav {
 .login ul {
     display: flex;
     list-style: none;
+    margin-right: 15px;
 }
 
 .login ul li {
@@ -103,9 +107,66 @@ nav {
     color:#ffffff;
 }
 
-
-
-
 .login ul li + li > a {
     color:#ffffff;
 }
+.main-section {
+    border: 1px solid red;
+    margin: 0 auto;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+    padding: 50px 30px;
+}
+
+.hero-section .hero-text h1, h1 span {
+    font-size: 48px;
+    line-height: 56px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 span {
+    color:#A435F0;
+}
+.hero-section .hero-text {
+    width: 50%;
+    /* outline: 1px solid red; */
+
+}
+
+.hero-section .hero-text p{
+    font-size: 19px;
+    color: var(--gray);
+    margin: 22px 0;
+    width: 90%;
+}
+
+.hero-button {
+    padding: 15px 10px;
+    background: #000000;
+    border:1px solid #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.hero-button a {
+    color: #ffffff;
+    text-decoration: none;
+    
+}
+
+.hero-button:hover {
+    background:#5022C3;
+    border:1px solid #5022C3;
+}
+
+.hero-section img {
+    /* outline: 1px solid red; */
+}
+
