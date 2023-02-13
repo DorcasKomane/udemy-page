@@ -174,23 +174,20 @@ h1 span {
     background: #F0F2F4;
     height: 400px;
     justify-content: center;
-    outline: 1px solid red;
 }
 
 .reviewer-section {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    outline: 1px solid red;
     padding-top: 50px;
 }
-.reviewer-section h2, p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+
 .reviewer-section h2{
     padding-bottom: 15px;
     font-size: 32px;
     line-height: 42px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .reviewer-section p {
@@ -204,7 +201,42 @@ h1 span {
 }
 
 .reviewer-badge img {
-    width: 150px;
+    width: 170px;
     padding: 50px 10px;
 }
+
+.social-proof-container {
+    background: #434343;
+    height: 300px;
+    justify-content: center;
+}
+
+.social-proof-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.social-proof-section h3 {
+    font-size: 19px;
+    line-height: 23px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.customer-logo {
+    margin: auto;
+    /* outline: 1px solid red; */
+    justify-content: center;
+    
+}
+
+.customer-logo img {
+    width: 100px;
+    margin: 40px;
+    vertical-align: middle;
+}
+
+
 
