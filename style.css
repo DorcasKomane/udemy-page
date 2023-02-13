@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-
 }
 
 :root {
@@ -172,7 +171,7 @@ h1 span {
 
 .reviewer-container{
     background: #F0F2F4;
-    height: 400px;
+    height: 450px;
     justify-content: center;
 }
 
@@ -192,7 +191,7 @@ h1 span {
 
 .reviewer-section p {
     font-size: 19px;
-    color: #1C1D1F;
+    color: var(--gray);
 }
 
 .reviewer-badge{
@@ -238,5 +237,66 @@ h1 span {
     vertical-align: middle;
 }
 
+.upskill-container {
+    background: #ffffff;
+    /* height: 300px; */
+    justify-content: center;
+}
+
+.upskill-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+}
+.upskill-section h2 {
+   font-size: 32px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.upskill-section p {
+    font-size: 19px;
+    color: var(--gray);
+    padding: 20px 0 100px 0;
+ }
+  
+.upskill-section img {
+    width: 400px;
+}
+    
+.sub-section {
+    display: flex;
+    justify-content: center;
+}
+
+.upskill-section h3 {
+    text-align: left;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.upskill-section ul {
+    text-align: left;
+    padding-left: 35px;
+}
+
+.upskill-section ul li::marker {
+    font-size: 1.5rem;
+}
+
+.upskill-section li{
+    padding: 10px;
+    font-size: 19px;
+    color:var(--gray);
+}
+
+.upskill-section a {
+    text-decoration: none;
+    text-align: left;
+    color: var(--blue);
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
+}
 
 
