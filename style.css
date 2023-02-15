@@ -402,4 +402,70 @@ h1 span {
 
 /* END TESTIMONIAL SECTION */
 
+/* START TRENDS SECTION */
+
+.trends-container {
+    background: #ffffff;
+    /* height: 300px; */
+    justify-content: center;
+}
+
+.trends-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 60px 0;
+    display: flex;
+}
+
+.trends-section img {
+    width: 600px;
+    padding: 25px;
+}
+
+.trends-section .sub-text {
+    padding: 50px 30px 30px 30px;
+}
+
+.trends-section p {
+    padding: 10px;
+    font-size: 19px;
+    color:var(--gray);
+}
+
+.trends-section ul {
+    text-align: left;
+    padding: 0 0 30px 35px;
+}
+
+.trends-section ul li::marker {
+    font-size: 1.5rem;
+}
+
+.trends-section li{
+    padding: 10px;
+    font-size: 19px;
+    color:var(--gray);
+}
+
+.trends-section a {
+    text-decoration: none;
+    text-align: left;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.trends-section button {
+    padding: 15px;
+    color:#ffffff;
+    background: #000000;
+    border: 1px solid black;
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: 15px;
+}
+
+/* END TRENDS SECTION */
+
 
