@@ -472,7 +472,7 @@ h1 span {
 /* START TRANSFORMATIVE SECTION */
 
 .learning-needs-container {
-    background: #f7f9fa;
+    background: #F7F9FA;
     justify-content: center;
 }
 
@@ -489,13 +489,66 @@ h1 span {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.learning-needs-section p {
+.learning-needs-section > p {
     font-size: 19px;
     padding: 30px;
     
 }
 
+.learning-needs-section .sub-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
 
+.learning-needs-section .sub-section .block {
+    flex: 1;
+    align-items: left;
+    justify-content: left;
+    padding: 20px;
+    vertical-align: top;
+}
+
+.learning-needs-section .sub-section .block img {
+    margin-bottom: 30px;
+}
+
+.learning-needs-section .sub-section .block h4 {
+    margin-bottom: 15px;
+}
+
+.learning-needs-section .sub-section .block p {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.learning-needs-section .sub-section {
+    margin: 40px 0 0 0;
+}
+
+.learning-needs-section .bottom {
+    margin-top: 10px;
+}
+
+.learning-needs-section a {
+    text-decoration: none;
+    text-align: left;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.learning-needs-section button {
+    /* padding: 20px; */
+    color:#5022C3;
+    background: #F7F9FA;
+    border: 1px solid #F7F9FA;
+    font-weight: bold;
+    font-size: 19px;
+    margin-left: 0;
+}
 
 /* END TRANSFORMATIVE SECTION */
 
