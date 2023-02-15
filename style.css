@@ -143,8 +143,6 @@ h1 span {
 }
 .hero-section .hero-text {
     width: 50%;
-    /* outline: 1px solid red; */
-
 }
 
 .hero-section .hero-text p{
@@ -483,12 +481,6 @@ h1 span {
     padding: 60px 0;
 }
 
-.learning-needs-section h2 {
-    font-size: 32px;
-    line-height: 40px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
 .learning-needs-section > p {
     font-size: 19px;
     padding: 30px;
@@ -552,4 +544,62 @@ h1 span {
 
 /* END TRANSFORMATIVE SECTION */
 
+
+/* START DEMO SECTION */
+
+.demo-container {
+    background: var(--purple);
+    justify-content: center;
+}
+
+.demo-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+    color: var(--white);
+    /* outline: 1px solid red; */
+}
+
+.demo-section h2 {
+    font-size: 40px;
+    line-height: 50px;
+    color: var(--white);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.demo-section h2 + p {
+    font-size: 19px;
+    line-height: 26px;
+    color: var(--white);
+    padding: 20px 0 50px 0;
+}
+
+.demo-section button {
+    padding: 15px 10px;
+    background: #000000;
+    border:1px solid #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.demo-section a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.demo-section .bottom-btn {
+    background: var(--purple);
+    border: 1px solid var(--purple);
+    text-decoration: underline;
+}
+
+.demo-section .bottom-btn a {
+    font-size: 19px;
+}
+
+.demo-section button + p {
+    padding-top: 80px;
+    font-size: 19px;
+}
 
