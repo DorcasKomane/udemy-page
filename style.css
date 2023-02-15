@@ -269,6 +269,7 @@ h1 span {
 }
 .upskill-section h2 {
    font-size: 32px;
+   line-height: 40px;
    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .upskill-section p {
@@ -467,5 +468,35 @@ h1 span {
 }
 
 /* END TRENDS SECTION */
+
+/* START TRANSFORMATIVE SECTION */
+
+.learning-needs-container {
+    background: #f7f9fa;
+    justify-content: center;
+}
+
+.learning-needs-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.learning-needs-section h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.learning-needs-section p {
+    font-size: 19px;
+    padding: 30px;
+    
+}
+
+
+
+/* END TRANSFORMATIVE SECTION */
 
 
