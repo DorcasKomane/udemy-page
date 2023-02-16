@@ -616,3 +616,21 @@ h1 span {
     font-size: 19px;
 }
 
+/* END DEMO SECTION */
+
+/* START CUSTOMIZED LEARNING SECTION */
+
+.customized-learning-container {
+    background: #FFFFFF;
+    height: 450px;
+    justify-content: center;
+}
+
+.customized-learning-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* END CUSTOMIZED LEARNING SECTION */
