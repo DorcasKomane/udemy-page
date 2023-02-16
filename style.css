@@ -265,6 +265,7 @@ h1 span {
     text-align: center;
     padding: 60px 0;
 }
+
 .upskill-section h2 {
    font-size: 32px;
    line-height: 40px;
@@ -274,7 +275,7 @@ h1 span {
     font-size: 19px;
     line-height: 26px;
     color: var(--gray);
-    padding: 20px 0 100px 0;
+    padding: 20px 0 50px 0;
  }
   
 .upskill-section img {
@@ -284,7 +285,12 @@ h1 span {
 .sub-section {
     display: flex;
     justify-content: center;
-    margin-bottom: 120px;
+    padding: 40px 80px;
+}
+
+.upskill-section .flex-item{
+    flex: 1;
+    padding: 20px;
 }
 
 .upskill-section h3 {
@@ -328,8 +334,8 @@ h1 span {
 
 .upskill-section .sub-text {
     text-align: left;
-    width: 40%;
     text-overflow: break-word;
+    padding-top: 40px;
 }
 
 /* END UPSKILL SECTION */
@@ -352,8 +358,8 @@ h1 span {
     margin: auto;
     display: flex;
     justify-content: center;
-   
 }
+
 
 .testimonial-section > img {
     height: 60px;
@@ -479,6 +485,13 @@ h1 span {
     margin: 0 auto;
     text-align: center;
     padding: 60px 0;
+}
+
+.learning-needs-section h2 {
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--black);
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .learning-needs-section > p {
