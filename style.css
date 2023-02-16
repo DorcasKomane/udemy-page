@@ -586,6 +586,42 @@ h1 span {
 .customized-learning-section p + p {
 
 }
+.customized-learning-section .tabs-sub {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px;
+    outline: 1px solid red;
+}
+
+.tabs-sub input[type="radio"] {
+    display: none;
+}
+
+.tabs-sub label {
+    padding: 25px;
+    font-weight: bold;
+    color: var(--light-gray);
+    border-bottom: var(--light-gray);
+}
+
+.tabs-sub .tab {
+    /* display: flex; */
+    width: 100%;
+    background: var(--white);
+    order: 1;
+    display: none;
+}
+
+.tabs-sub input[type="radio"]:checked + label + .tab {
+    display: block;
+}
+
+.tabs-sub input[type="radio"]:checked + label {
+    color: var(--black);
+    border-bottom: 2px solid black;
+}
 
 
 /* END CUSTOMIZED LEARNING SECTION */
@@ -650,3 +686,6 @@ h1 span {
 }
 
 /* END DEMO SECTION */
+
+
+
