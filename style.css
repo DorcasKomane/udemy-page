@@ -497,7 +497,6 @@ h1 span {
 .learning-needs-section > p {
     font-size: 19px;
     padding: 30px;
-    
 }
 
 .learning-needs-section .sub-section {
@@ -556,6 +555,40 @@ h1 span {
 }
 
 /* END TRANSFORMATIVE SECTION */
+
+/* START CUSTOMIZED LEARNING SECTION */
+
+.customized-learning-container {
+    background: #FFFFFF;
+    height: 450px;
+    justify-content: center;
+}
+
+.customized-learning-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.customized-learning-section h2 {
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--black);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 35px;
+}
+.customized-learning-section p {
+    font-size: 19px;
+    letter-spacing: 0.2px;
+    /* padding: 35px; */
+}
+.customized-learning-section p + p {
+
+}
+
+
+/* END CUSTOMIZED LEARNING SECTION */
 
 
 /* START DEMO SECTION */
@@ -617,20 +650,3 @@ h1 span {
 }
 
 /* END DEMO SECTION */
-
-/* START CUSTOMIZED LEARNING SECTION */
-
-.customized-learning-container {
-    background: #FFFFFF;
-    height: 450px;
-    justify-content: center;
-}
-
-.customized-learning-section {
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-    padding-top: 50px;
-}
-
-/* END CUSTOMIZED LEARNING SECTION */
