@@ -569,6 +569,7 @@ h1 span {
     margin: 0 auto;
     text-align: center;
     padding: 100px 0;
+    /* outline: 1px solid red; */
 }
 
 .customized-learning-section h2 {
@@ -589,6 +590,7 @@ h1 span {
 }
 .customized-learning-section .tabs-sub {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 50px auto;
@@ -604,7 +606,8 @@ h1 span {
     padding: 25px;
     font-weight: bold;
     color: var(--light-gray);
-    border-bottom: var(--light-gray);
+    border-bottom: 2px solid var(--gray86);
+    /* border-bottom: 5px solid red; */
 }
 
 .tabs-sub .tab {
@@ -614,7 +617,7 @@ h1 span {
     display: none;
     padding-top: 30px;
     /* display: flex; */
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .tabs-sub input[type="radio"]:checked + label + .tab {
@@ -637,6 +640,7 @@ h1 span {
 
 .tab-flex-item {
     display: flex;
+    justify-content: center;
     padding: 50px 0;
     /* flex: 1; */
 }
