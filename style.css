@@ -577,6 +577,7 @@ h1 span {
     color: var(--black);
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 35px;
+
 }
 .customized-learning-section p {
     font-size: 19px;
@@ -592,7 +593,7 @@ h1 span {
     max-width: 1200px;
     margin: 50px auto;
     padding: 30px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .tabs-sub input[type="radio"] {
@@ -607,11 +608,13 @@ h1 span {
 }
 
 .tabs-sub .tab {
-    /* display: flex; */
     width: 100%;
     background: var(--white);
     order: 1;
     display: none;
+    padding-top: 30px;
+    /* display: flex; */
+    outline: 1px solid red;
 }
 
 .tabs-sub input[type="radio"]:checked + label + .tab {
@@ -621,6 +624,46 @@ h1 span {
 .tabs-sub input[type="radio"]:checked + label {
     color: var(--black);
     border-bottom: 2px solid black;
+}
+
+.customized-learning-section h3 {
+    font-size: 24px;
+}
+
+.customized-learning-section h3 + p {
+    padding: 30px 0;
+    width: 80%;
+}
+
+.tab-flex-item {
+    display: flex;
+    padding: 50px 0;
+    /* flex: 1; */
+}
+
+.tab-flex-item .text-content {
+    text-align: left;
+    padding-top: 30px;
+    /* width: 40%; */
+}
+
+.tabs-sub button {
+    padding: 15px 10px;
+    background: #000000;
+    border:1px solid #000000;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+}
+.tabs-sub button a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tab-flex-item .img-content {
+
+    padding-right: 30px;
+    /* width: 60%; */
 }
 
 
