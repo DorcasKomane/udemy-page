@@ -85,6 +85,41 @@ nav {
     color: #5022C3;
 }
 
+.login ul {
+    display: flex;
+    list-style: none;
+    margin-right: 15px;
+}
+
+.login ul li {
+    padding: 20px;
+}
+.login ul li a {
+    color:#000000;
+    text-decoration: none;
+}
+.login ul li a:hover {
+    color: #5022C3;
+}
+
+.login ul li + li {
+    background:#000000;
+    color:#ffffff;
+    font-weight: bold;
+}
+
+.login ul li + li:hover {
+    background:#5022C3;
+}
+
+.login ul li + li a:hover{
+    color:#ffffff;
+}
+
+.login ul li + li > a {
+    color:#ffffff;
+}
+
 
 nav .mega-container {
     position: absolute;
@@ -100,6 +135,7 @@ nav .mega-container .mega-menu-content {
     background: var(--white);
     border: 1px solid #B7B7B7;
     display: flex;
+    justify-content: space-between;
     padding: 20px;
     margin-top: 31px;
 }
@@ -150,44 +186,13 @@ nav li:hover .dropdown  {
     visibility: visible;
 }
 
-nav .mega-dropdown {
-    /* display: flex; */
-    position: absolute;
+.login .dropdown li {
+    background: var(--white);
 }
 
-.login ul {
-    display: flex;
-    list-style: none;
-    margin-right: 15px;
-}
-
-.login ul li {
-    padding: 20px;
-}
-.login ul li a {
-    color:#000000;
-    text-decoration: none;
-}
-.login ul li a:hover {
-    color: #5022C3;
-}
-
-.login ul li + li {
-    background:#000000;
-    color:#ffffff;
-    font-weight: bold;
-}
-
-.login ul li + li:hover {
-    background:#5022C3;
-}
-
-.login ul li + li a:hover{
-    color:#ffffff;
-}
-
-.login ul li + li > a {
-    color:#ffffff;
+.login .dropdown li a {
+    color: var(--gray);
+    font-weight: normal;
 }
 
 /* END HEADER SECTION */
