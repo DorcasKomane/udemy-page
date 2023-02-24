@@ -51,6 +51,7 @@ header {
     /* outline: 1px solid blue; */
     padding: 0 30px;
     background: var(--white);
+    position: relative;
 }
 nav {
     max-width: 1200px;
@@ -59,10 +60,6 @@ nav {
     justify-content: space-between;
     margin: 10px 10px;
     /* outline: 1px solid red;  */
-    
-}
-
-nav ul > li.dropdown > a:after {
     
 }
 
@@ -88,6 +85,46 @@ nav ul > li.dropdown > a:after {
     color: #5022C3;
 }
 
+
+nav .mega-container {
+    position: absolute;
+    visibility: hidden;
+}
+
+nav li:hover .mega-container {
+    position: absolute;
+    visibility: visible;
+}
+
+nav .mega-container .mega-menu-content {
+    background: var(--white);
+    border: 1px solid #B7B7B7;
+    display: flex;
+    padding: 20px;
+    margin-top: 31px;
+}
+
+.mega-menu-content .mega-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.mega-menu-content .mega-list li {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.mega-menu-content .mega-list li a {
+    color: var(--gray);
+}
+
+.mega-menu-content .mega-list h4 {
+    color: var(--light-gray);
+    font-size: 14px;
+    padding: 0 0 20px 10px;
+}
+
 nav .dropdown {
     background: var(--white);
     width: 250px;
@@ -97,10 +134,11 @@ nav .dropdown {
     border: 1px solid #B7B7B7;
     margin-top: 31px;
     visibility: hidden;
+    padding-bottom: 20px;
 }
 
 nav .dropdown li {
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
     font-size: 14px;
 }
 
@@ -110,6 +148,11 @@ nav .dropdown li a {
 
 nav li:hover .dropdown  {
     visibility: visible;
+}
+
+nav .mega-dropdown {
+    /* display: flex; */
+    position: absolute;
 }
 
 .login ul {
