@@ -263,7 +263,7 @@ h1 span {
 /* START REVIEWER SECTION */
 
 .reviewer-container{
-    background: #F0F2F4;
+    /* background: #F0F2F4; */
     height: 450px;
     justify-content: center;
 }
@@ -321,6 +321,7 @@ h1 span {
     line-height: 23px;
     font-weight: bold;
     color: #ffffff;
+    padding: 0 20px;
 }
 
 .customer-logo {
@@ -932,7 +933,11 @@ h1 span {
         display: none;
     }
 
-    .demo-container, .learning-needs-container, .trends-container, .testimonial-container {
+    .demo-container, 
+    .learning-needs-container, 
+    .trends-container, 
+    .testimonial-container,
+    .social-proof-container {
         margin: 0 20px;
     }
 }
@@ -941,7 +946,9 @@ h1 span {
     .hero-section {
         flex-direction: column-reverse;
     }
-    .sub-section, .testimonial-section {
+    .sub-section, 
+    .testimonial-section,
+    .trends-section {
         flex-direction: column;
     }
     .sub-section:nth-child(even) {
