@@ -137,7 +137,8 @@ nav .mega-container .mega-menu-content {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 31px;
+    margin: 31px 0 0 -20px;
+
 }
 
 .mega-menu-content .mega-list {
@@ -168,7 +169,7 @@ nav .dropdown {
     flex-direction: column;
     line-height: 14px;
     border: 1px solid #B7B7B7;
-    margin-top: 31px;
+    margin: 31px 0 0 -20px;
     visibility: hidden;
     padding-bottom: 20px;
 }
