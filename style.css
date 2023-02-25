@@ -361,12 +361,13 @@ h1 span {
    font-size: 32px;
    line-height: 40px;
    font-family: Georgia, 'Times New Roman', Times, serif;
+   padding: 0 20px;
 }
 .upskill-section p {
     font-size: 19px;
     line-height: 26px;
     color: var(--gray);
-    padding: 20px 0 50px 0;
+    padding: 20px 20px 50px 20px;
  }
   
 .upskill-section img {
@@ -454,10 +455,11 @@ h1 span {
 
 
 .testimonial-section > img {
-    height: 60px;
     margin: 50px;
-    
-    
+    align-self: center;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*to comply with IE8*/
 }
 
 .testimonial-text {
@@ -611,7 +613,6 @@ h1 span {
     /* margin: 0 20px 0 0; */
     padding: 20px;
     vertical-align: top;
-    /* outline: 1px solid red; */
 }
 
 .learning-needs-section .sub-section .block img {
@@ -662,7 +663,7 @@ h1 span {
     background: #FFFFFF;
     height: 450px;
     justify-content: center;
-    margin-bottom:500px;
+    margin-bottom: 500px;
 }
 
 .customized-learning-section {
@@ -681,6 +682,7 @@ h1 span {
     margin-bottom: 35px;
 
 }
+
 .customized-learning-section p {
     font-size: 19px;
     letter-spacing: 0.2px;
@@ -758,6 +760,7 @@ h1 span {
     font-weight: bold;
     font-size: 16px;
 }
+
 .tabs-sub button a {
     color: #ffffff;
     text-decoration: none;
@@ -769,7 +772,6 @@ h1 span {
     /* width: 60%; */
 }
 
-
 /* END CUSTOMIZED LEARNING SECTION */
 
 
@@ -778,11 +780,12 @@ h1 span {
 .demo-container {
     background: var(--purple);
     justify-content: center;
+    margin-top: 50px;
 }
 
 .demo-section {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: auto;
     text-align: center;
     padding: 60px 50px;
     color: var(--white);
@@ -893,7 +896,6 @@ h1 span {
     justify-content: space-between;
     align-items:center;
     margin-top: 60px;
-    outline: 1px solid red;
 }
 
 .bottom-footer a {
@@ -930,7 +932,7 @@ h1 span {
         display: none;
     }
 
-    .demo-container, .learning-needs-container, .trends-container {
+    .demo-container, .learning-needs-container, .trends-container, .testimonial-container {
         margin: 0 20px;
     }
 }
@@ -939,11 +941,23 @@ h1 span {
     .hero-section {
         flex-direction: column-reverse;
     }
-    .sub-section {
+    .sub-section, .testimonial-section {
         flex-direction: column;
     }
     .sub-section:nth-child(even) {
         flex-direction: column-reverse;
     }
+    .learning-needs-section .bottom, .top {
+        margin: 0;
+        text-align: left;
+    }
+
+    .learning-needs-section .sub-section .block {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    
+    
 }
 
