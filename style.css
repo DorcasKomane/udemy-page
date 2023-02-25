@@ -69,8 +69,8 @@ nav {
 
 .menu ul {
     display: flex;
-    /* margin: 0 250px 0 50px; */
-    list-style: none;    
+    list-style: none; 
+    /* margin-left: -100px;    */
 }
 .menu ul li {
     padding: 20px;
@@ -290,10 +290,13 @@ h1 span {
 .reviewer-badge{
     display: flex;
     justify-content: center;
+    max-width: 100%;
 }
 
 .reviewer-badge img {
-    width: 170px;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*to comply with IE8*/
     padding: 50px 10px;
 }
 /* END REVIEWER SECTION */
@@ -302,7 +305,7 @@ h1 span {
 
 .social-proof-container {
     background: #434343;
-    height: 300px;
+    min-height: 300px;
     justify-content: center;
 }
 
@@ -321,7 +324,9 @@ h1 span {
 }
 
 .customer-logo {
-    margin: auto;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     /* outline: 1px solid red; */
     justify-content: center;
     
@@ -331,6 +336,8 @@ h1 span {
     width: 100px;
     margin: 40px;
     vertical-align: middle;
+    align-self: center;
+    /* outline: 1px solid red; */
 }
 
 /* END SOCIAL PROOF SECTION */
@@ -364,6 +371,7 @@ h1 span {
   
 .upskill-section img {
     width: 400px;
+    align-self: center;
 }
     
 .sub-section {
@@ -455,6 +463,7 @@ h1 span {
 .testimonial-text {
     text-align: left;
     padding-left: 100px;
+    align-self: center;
     
 }
 
@@ -508,8 +517,12 @@ h1 span {
 }
 
 .trends-section img {
-    width: 600px;
+    /* width: 600px; */
     padding: 25px;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*to comply with IE8*/
+    align-self: center;
 }
 
 .trends-section .sub-text {
@@ -890,6 +903,47 @@ h1 span {
 
 }
 
+/* END FOOTER SECTION */
 
+/* MEDIA QUERIES */
 
-/*END FOOTER SECTION*/
+@media screen and (min-width:768) and (max-width: 1024px) {
+    .hero-section .hero-text h1, h1 span {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-section .top-footer {
+        flex-direction: column;
+    }
+    .footer-flex-item {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    /* Hide menu & only display logo + burger menu */
+    .menu, .login {
+        display: none;
+    }
+
+    .demo-container, .learning-needs-container, .trends-container {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+    .sub-section {
+        flex-direction: column;
+    }
+    .sub-section:nth-child(even) {
+        flex-direction: column-reverse;
+    }
+}
+
