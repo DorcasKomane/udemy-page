@@ -347,7 +347,6 @@ h1 span {
 
 .upskill-container {
     background: #ffffff;
-    /* height: 300px; */
     justify-content: center;
 }
 
@@ -593,11 +592,12 @@ h1 span {
     line-height: 40px;
     color: var(--black);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 0 20px;
 }
 
 .learning-needs-section > p {
     font-size: 19px;
-    padding: 30px;
+    padding: 30px 20px;
 }
 
 .learning-needs-section .sub-section {
@@ -711,6 +711,9 @@ h1 span {
     border-bottom: 2px solid var(--gray86);
     /* border-bottom: 5px solid red; */
 }
+.tabs-sub label span {
+    display: none;
+}
 
 .tabs-sub .tab {
     width: 100%;
@@ -718,7 +721,7 @@ h1 span {
     order: 1;
     display: none;
     padding-top: 30px;
-    /* display: flex; */
+    flex-grow: 1;
     /* outline: 1px solid red; */
 }
 
@@ -751,6 +754,7 @@ h1 span {
     text-align: left;
     padding-top: 30px;
     /* width: 40%; */
+    outline: 1px solid red;
 }
 
 .tabs-sub button {
@@ -771,6 +775,15 @@ h1 span {
 
     padding-right: 30px;
     /* width: 60%; */
+    
+}
+
+.tab-flex-item .img-content img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*to comply with IE8*/
+    align-self: center;
+    outline: 1px solid red;
 }
 
 /* END CUSTOMIZED LEARNING SECTION */
@@ -885,7 +898,12 @@ h1 span {
 }
 
 .right-content img {
-    width: 100px;
+    /* width: 100px; */
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*to comply with IE8*/
+    align-self: center;
+    outline: 1px solid red;
 }
 
 .right-content span {
@@ -943,7 +961,7 @@ h1 span {
 }
 
 @media screen and (max-width: 767px) {
-    .hero-section {
+    .hero-section, .tab-flex-item {
         flex-direction: column-reverse;
     }
     .sub-section, 
@@ -962,9 +980,36 @@ h1 span {
     .learning-needs-section .sub-section .block {
         padding-left: 0;
         width: 100%;
+
     }
 
-    
+    .tabs-sub .tab-flex-item,
+    .tabs-sub label {
+        order: initial;
+    }
+
+    .tabs-sub label {
+        width: 100%;
+        margin-right: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .tabs-sub label span {
+        display:inline-block;
+        transform: rotate(90deg);
+        font-size: 20px;
+    }
+
+    .tabs-container .tab-flex-item {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+
+    .tabs-container label + input[type="radio"]:checked + .tab-flex-item {
+        max-height: 1000px;
+    }
     
 }
 
