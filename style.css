@@ -85,76 +85,6 @@ nav {
     color: #5022C3;
 }
 
-
-nav .mega-container {
-    position: absolute;
-    visibility: hidden;
-}
-
-nav li:hover .mega-container {
-    position: absolute;
-    visibility: visible;
-}
-
-nav .mega-container .mega-menu-content {
-    background: var(--white);
-    border: 1px solid #B7B7B7;
-    display: flex;
-    padding: 20px;
-    margin-top: 31px;
-}
-
-.mega-menu-content .mega-list {
-    display: flex;
-    flex-direction: column;
-    margin-right: 50px;
-}
-
-.mega-menu-content .mega-list li {
-    padding: 10px;
-    font-size: 14px;
-}
-
-.mega-menu-content .mega-list li a {
-    color: var(--gray);
-}
-
-.mega-menu-content .mega-list h4 {
-    color: var(--light-gray);
-    font-size: 14px;
-    padding: 0 0 20px 10px;
-}
-
-nav .dropdown {
-    background: var(--white);
-    width: 250px;
-    position: absolute;
-    flex-direction: column;
-    line-height: 14px;
-    border: 1px solid #B7B7B7;
-    margin-top: 31px;
-    visibility: hidden;
-    padding-bottom: 20px;
-}
-
-nav .dropdown li {
-    padding: 10px 10px 10px 20px;
-    font-size: 14px;
-}
-
-nav .dropdown li a {
-    color: var(--gray);
-}
-
-nav li:hover .dropdown  {
-    visibility: visible;
-}
-
-nav .mega-dropdown {
-    /* display: flex; */
-    position: absolute;
-}
-
 .login ul {
     display: flex;
     list-style: none;
@@ -188,6 +118,82 @@ nav .mega-dropdown {
 
 .login ul li + li > a {
     color:#ffffff;
+}
+
+
+nav .mega-container {
+    position: absolute;
+    visibility: hidden;
+}
+
+nav li:hover .mega-container {
+    position: absolute;
+    visibility: visible;
+}
+
+nav .mega-container .mega-menu-content {
+    background: var(--white);
+    border: 1px solid #B7B7B7;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 31px 0 0 -20px;
+
+}
+
+.mega-menu-content .mega-list {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+
+.mega-menu-content .mega-list li {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.mega-menu-content .mega-list li a {
+    color: var(--gray);
+}
+
+.mega-menu-content .mega-list h4 {
+    color: var(--light-gray);
+    font-size: 14px;
+    padding: 0 0 20px 10px;
+}
+
+nav .dropdown {
+    background: var(--white);
+    width: 250px;
+    position: absolute;
+    flex-direction: column;
+    line-height: 14px;
+    border: 1px solid #B7B7B7;
+    margin: 31px 0 0 -20px;
+    visibility: hidden;
+    padding-bottom: 20px;
+}
+
+nav .dropdown li {
+    padding: 10px 10px 10px 20px;
+    font-size: 14px;
+}
+
+nav .dropdown li a {
+    color: var(--gray);
+}
+
+nav li:hover .dropdown  {
+    visibility: visible;
+}
+
+.login .dropdown li {
+    background: var(--white);
+}
+
+.login .dropdown li a {
+    color: var(--gray);
+    font-weight: normal;
 }
 
 /* END HEADER SECTION */
