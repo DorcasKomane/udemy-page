@@ -584,7 +584,7 @@ h1 span {
     margin: 0 auto;
     text-align: center;
     padding: 60px 0px;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .learning-needs-section h2 {
@@ -662,16 +662,16 @@ h1 span {
 
 .customized-learning-container {
     background: #FFFFFF;
-    height: 450px;
+    min-height: 450px;
     justify-content: center;
-    margin-bottom: 500px;
+    /* margin-bottom: 500px; */
 }
 
 .customized-learning-section {
     max-width: 1200px;
     margin: 0 auto;
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px 0px 20px;
     /* outline: 1px solid red; */
 }
 
@@ -754,7 +754,7 @@ h1 span {
     text-align: left;
     padding-top: 30px;
     /* width: 40%; */
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .tabs-sub button {
@@ -783,7 +783,7 @@ h1 span {
     height: auto;
     width: auto\9; /*to comply with IE8*/
     align-self: center;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 /* END CUSTOMIZED LEARNING SECTION */
@@ -903,7 +903,7 @@ h1 span {
     height: auto;
     width: auto\9; /*to comply with IE8*/
     align-self: center;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 .right-content span {
@@ -990,26 +990,44 @@ h1 span {
 
     .tabs-sub label {
         width: 100%;
-        margin-right: 0;
+        height: 30px;
+        margin: 5px;
         display: flex;
         justify-content: space-between;
+        /* outline: 1px solid red; */
+    }
+    .tabs-sub .tab-flex-item .text-content {
+        padding-top: 70px;
     }
 
     .tabs-sub label span {
-        display:inline-block;
-        transform: rotate(90deg);
-        font-size: 20px;
+        display: block;
+        font-size: 15px;
     }
 
     .tabs-container .tab-flex-item {
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.5s;
+        transition: all 0.4s ease;
     }
 
     .tabs-container label + input[type="radio"]:checked + .tab-flex-item {
-        max-height: 1000px;
+        max-height: 100%;
+    }
+
+    .customized-learning-section .tabs-sub{
+
+    }
+
+    .tabs-sub .tab {
+        width: 100%;
+        background: var(--white);
+        order: 0;
+        /* display:block; */
+        padding-top: 30px;
+        flex-grow: 1;
     }
     
+
 }
 
