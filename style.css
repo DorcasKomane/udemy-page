@@ -76,6 +76,7 @@ nav {
 .menu ul li {
     padding: 20px;
     text-decoration: none;
+    position: relative;
 }
 .menu ul li a {
     color: #000000;
@@ -197,6 +198,18 @@ nav li:hover .dropdown  {
     font-weight: normal;
 }
 
+.menu ul .submenu {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #B7B7B7; 
+    display: none;
+    left: 0;
+}
+
+nav .dropdown li:hover > ul {
+    display: block;
+}
+
 /* END HEADER SECTION */
 
 .main-section {
@@ -212,7 +225,6 @@ nav li:hover .dropdown  {
     align-items: center;
     max-width: 1200px;
     margin: 0px auto;
-    outline: 1px solid red;
     padding: 150px 30px 70px 30px;
 }
 
@@ -261,7 +273,7 @@ h1 span {
 
 .reviewer-container{
     /* background: #F0F2F4; */
-    height: 450px;
+    min-height: 450px;
     justify-content: center;
 }
 
@@ -287,7 +299,10 @@ h1 span {
 .reviewer-badge{
     display: flex;
     justify-content: center;
+    flex-wrap: nowrap;
     max-width: 100%;
+    height: auto;
+    width: auto\9; /*to comply with IE8*/
 }
 
 .reviewer-badge img {
@@ -368,10 +383,8 @@ h1 span {
  }
   
 .upskill-section img {
-    width: 400px;
+    max-width: 400px;
     align-self: center;
-    
-    outline: 1px solid red;
 }
     
 .sub-section {
@@ -914,7 +927,6 @@ h1 span {
     color: var(--white);
     text-decoration: none;
     font-size: 14px;
-
 }
 
 /* END FOOTER SECTION */
@@ -1044,10 +1056,6 @@ h1 span {
         max-height: 100%;
     }
 
-    .customized-learning-section .tabs-sub{
-
-    }
-
     .tabs-sub .tab {
         width: 100%;
         background: var(--white);
@@ -1056,9 +1064,5 @@ h1 span {
         padding-top: 30px;
         flex-grow: 1;
     }
-
-    
-    
-
 }
 
