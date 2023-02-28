@@ -122,7 +122,6 @@ nav {
     color:#ffffff;
 }
 
-
 nav .mega-container {
     position: absolute;
     visibility: hidden;
@@ -140,7 +139,6 @@ nav .mega-container .mega-menu-content {
     justify-content: space-between;
     padding: 20px;
     margin: 31px 0 0 -20px;
-
 }
 
 .mega-menu-content .mega-list {
@@ -198,17 +196,35 @@ nav li:hover .dropdown  {
     font-weight: normal;
 }
 
-.menu ul .submenu {
+nav .dropdown ul {
     position: absolute;
-    background: #fff;
-    border: 1px solid #B7B7B7; 
     display: none;
+    top: 100%;
     left: 0;
+    
+}
+
+.menu ul .submenu li {
+    color: var(--gray);
 }
 
 nav .dropdown li:hover > ul {
     display: block;
+    background: #fff;
+    border: 1px solid #B7B7B7;
 }
+
+nav .dropdown ul li {
+    position: relative; 
+}
+
+nav .dropdown ul ul{
+    top: 0;
+    left: 100%;
+}
+
+
+
 
 /* END HEADER SECTION */
 
