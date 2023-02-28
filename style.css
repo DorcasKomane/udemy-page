@@ -44,6 +44,7 @@ header {
     height: 80px;
     position: fixed;
     z-index: 99;
+    
 }
 .nav-container {
     max-width: 1200px;
@@ -211,7 +212,7 @@ nav li:hover .dropdown  {
     align-items: center;
     max-width: 1200px;
     margin: 0px auto;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
     padding: 150px 30px 70px 30px;
 }
 
@@ -252,10 +253,6 @@ h1 span {
 .hero-button:hover {
     background:#5022C3;
     border:1px solid #5022C3;
-}
-
-.hero-section img {
-    /* outline: 1px solid red; */
 }
 
 /* END HERO SECTION */
@@ -373,6 +370,8 @@ h1 span {
 .upskill-section img {
     width: 400px;
     align-self: center;
+    
+    outline: 1px solid red;
 }
     
 .sub-section {
@@ -445,17 +444,12 @@ h1 span {
     margin: 0 auto;
     text-align: center;
     padding: 60px 0;
-}
-
-.testimonial-section {
-    margin: auto;
     display: flex;
     justify-content: center;
 }
 
-
 .testimonial-section > img {
-    margin: 50px;
+    margin: 0 0 50px 50px;
     align-self: center;
     max-width: 100%;
     height: auto;
@@ -466,7 +460,6 @@ h1 span {
     text-align: left;
     padding-left: 100px;
     align-self: center;
-    
 }
 
 .testimonial-section .testimonial-text > p {
@@ -964,6 +957,22 @@ h1 span {
     .hero-section, .tab-flex-item {
         flex-direction: column-reverse;
     }
+    .hero-section .hero-text {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .hero-section img {
+        width: 100%;
+    }
+
+    .upskill-section .flex-item {
+        width: 100%;
+    }
+
+    .learning-needs-section .sub-section .block {
+        width: 100%;
+    }
+
     .sub-section, 
     .testimonial-section,
     .trends-section {
@@ -982,6 +991,26 @@ h1 span {
         width: 100%;
 
     }
+
+    .testimonial-section .testimonial-text > p {
+        width: 100%;
+    }
+
+    .testimonial-section > img {
+        margin: 0 0 50px 0;
+        align-self: left;
+    }
+
+    .testimonial-text {
+        padding: 0 20px;
+        align-self: left;
+    }
+
+    .testimonial-section {
+        justify-content: left;
+        text-align: left;
+    }
+
 
     .tabs-sub .tab-flex-item,
     .tabs-sub label {
@@ -1011,7 +1040,7 @@ h1 span {
         transition: all 0.4s ease;
     }
 
-    .tabs-container label + input[type="radio"]:checked + .tab-flex-item {
+    .tabs-sub label + input[type="radio"]:checked + .tab-flex-item {
         max-height: 100%;
     }
 
@@ -1027,6 +1056,8 @@ h1 span {
         padding-top: 30px;
         flex-grow: 1;
     }
+
+    
     
 
 }
