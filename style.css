@@ -234,46 +234,93 @@ nav .dropdown ul ul{
     background: var(--white);
     width: 70%;
     outline: 1px solid red;
+    z-index: 1;
+}
+
+.main-list-item {
+    border-bottom: 1px solid var(--gray-alto);
+    padding: 10px 0;
 }
 
 .side-menu > ul {
     list-style: none;
+    
 }
 
-.side-menu > ul > li > a {
+.side-menu > ul > .main-list-item > a {
     text-decoration: none;
     color: var(--gray-silver-chalice);
     font-size: 14px;
 }
 
-.sub-list li a {
-    text-decoration: none;
+.sub-list {
+    /* padding: 5px 0; */
 }
 
-.sub-list > h4 {
-    color: var(--black);
-    font-weight: normal;  
-    outline: 1px solid red;
+.sub-list li{
+    display: none;
+}
+
+.sub-list li a {
+    text-decoration: none;
+    /* outline: 1px solid blue; */
 }
 
 .sub-list > .sub-list-title h4 {
     display: inline-block;
 }
 
-.sub-list > h4 a {
+.sub-list .sub-list-title h4 a {
     text-decoration: none;
+    font-weight: normal;
+    color: var(--black);
 }
 
-.sub-list > .sub-list-title i {
+.sub-list-title i {
     display: inline-block;
+    font-size: 12px;
 }
 
-.sub-list .sub-list-title  {
+.sub-list-title  {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5px 0;
+    /* outline: 1px solid red; */
 }
 
+.main-list-item ul {
+    list-style: none;
+}
+
+.main-list-item ul li {
+    padding: 5px 0;
+}
+
+.main-list-item ul li a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.main-list-item > ul {
+    padding: 8px 0;
+    /* outline: 1px solid red; */
+}
+
+.sub-list-title a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.bottom-links {
+    padding: 10px 0;
+}
+
+.bottom-links a {
+    font-size: 16px;
+    color: var(--black);
+    text-decoration: none; 
+}
 
 /* end SIDE MENU */
 
