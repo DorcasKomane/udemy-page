@@ -234,6 +234,7 @@ nav .dropdown ul ul{
     background: var(--white);
     width: 70%;
     outline: 1px solid red;
+    z-index: 1;
 }
 
 .main-list-item {
@@ -246,24 +247,23 @@ nav .dropdown ul ul{
     
 }
 
-.side-menu > ul > li > a {
+.side-menu > ul > .main-list-item > a {
     text-decoration: none;
     color: var(--gray-silver-chalice);
     font-size: 14px;
 }
 
 .sub-list {
-    padding: 5px 0;
-    
+    /* padding: 5px 0; */
 }
+
 .sub-list li{
     display: none;
-    outline: 1px solid greenyellow;
 }
 
 .sub-list li a {
     text-decoration: none;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
 }
 
 .sub-list > .sub-list-title h4 {
@@ -276,12 +276,12 @@ nav .dropdown ul ul{
     color: var(--black);
 }
 
-.sub-list > .sub-list-title i {
+.sub-list-title i {
     display: inline-block;
     font-size: 12px;
 }
 
-.sub-list .sub-list-title  {
+.sub-list-title  {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -293,13 +293,34 @@ nav .dropdown ul ul{
     list-style: none;
 }
 
+.main-list-item ul li {
+    padding: 5px 0;
+}
+
 .main-list-item ul li a {
     text-decoration: none;
     color: var(--black);
 }
 
+.main-list-item > ul {
+    padding: 8px 0;
+    /* outline: 1px solid red; */
+}
 
+.sub-list-title a {
+    text-decoration: none;
+    color: var(--black);
+}
 
+.bottom-links {
+    padding: 10px 0;
+}
+
+.bottom-links a {
+    font-size: 16px;
+    color: var(--black);
+    text-decoration: none; 
+}
 
 /* end SIDE MENU */
 
