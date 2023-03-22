@@ -232,11 +232,9 @@ nav .dropdown ul ul{
     left: 0;
     padding: 20px;
     background: var(--white);
+    width: 70%;
+    outline: 1px solid red;
 }
-
-/* .side-menu ul {
-    list-style: none;
-} */
 
 .side-menu > ul {
     list-style: none;
@@ -250,6 +248,30 @@ nav .dropdown ul ul{
 
 .sub-list li a {
     text-decoration: none;
+}
+
+.sub-list > h4 {
+    color: var(--black);
+    font-weight: normal;  
+    outline: 1px solid red;
+}
+
+.sub-list > .sub-list-title h4 {
+    display: inline-block;
+}
+
+.sub-list > h4 a {
+    text-decoration: none;
+}
+
+.sub-list > .sub-list-title i {
+    display: inline-block;
+}
+
+.sub-list .sub-list-title  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
