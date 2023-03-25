@@ -37,7 +37,7 @@
 }
 
 .main-section{
-    display: none;
+    /* display: none; */
 }
 
 /* START HEADER SECTION */
@@ -57,6 +57,8 @@ header {
     padding: 0 30px;
     background: var(--white);
     position: relative;
+    z-index: -1;
+    /* outline: 1px solid red; */
 }
 nav {
     max-width: 1200px;
@@ -64,7 +66,6 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     margin: 10px 10px;
-    
 }
 
 #logo {
@@ -233,8 +234,11 @@ nav .dropdown ul ul{
     padding: 20px;
     background: var(--white);
     width: 70%;
-    outline: 1px solid red;
-    z-index: 1;
+    margin-top: -80px;
+    outline: 1px solid var(--gray-alto);
+    z-index: -1;
+    height: 100vh;
+    display:none;
 }
 
 .main-list-item {
@@ -253,13 +257,9 @@ nav .dropdown ul ul{
     font-size: 14px;
 }
 
-.sub-list {
-    /* padding: 5px 0; */
-}
-
-.sub-list li{
+/* .sub-list li{
     display: none;
-}
+} */
 
 .sub-list li a {
     text-decoration: none;
@@ -312,6 +312,15 @@ nav .dropdown ul ul{
     color: var(--black);
 }
 
+.no-sub {
+    margin: 10px 0;
+    /* outline: 1px solid red; */
+}
+
+.top {
+    margin: 10px;
+}
+
 .bottom-links {
     padding: 10px 0;
 }
@@ -321,6 +330,18 @@ nav .dropdown ul ul{
     color: var(--black);
     text-decoration: none; 
 }
+
+.sub-list {
+    /* display: none; */
+    border: 1px solid red;
+} 
+
+
+.sub-list li{
+    /* display: none; */
+    /* border: 1px solid red; */
+} 
+
 
 /* end SIDE MENU */
 
