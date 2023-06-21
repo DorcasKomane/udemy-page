@@ -32,13 +32,9 @@
     font-size: 16px;
 }
 .page-container {
-    /* outline: 1px solid red; */
     margin: 0 auto;
 }
 
-.main-section{
-    /* display: none; */
-}
 
 /* START HEADER SECTION */
 header {
@@ -53,13 +49,12 @@ header {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    /* outline: 1px solid blue; */
     padding: 0 30px;
     background: var(--white);
     position: relative;
     z-index: -1;
-    /* outline: 1px solid red; */
 }
+
 nav {
     max-width: 1200px;
     display: flex;
@@ -75,13 +70,14 @@ nav {
 .menu ul {
     display: flex;
     list-style: none; 
-    /* margin-left: -100px;    */
 }
+
 .menu ul li {
     padding: 20px;
     text-decoration: none;
     position: relative;
 }
+
 .menu ul li a {
     color: #000000;
     text-decoration: none;
@@ -205,7 +201,6 @@ nav .dropdown ul {
     display: none;
     top: 100%;
     left: 0;
-    
 }
 
 .menu ul .submenu li {
@@ -225,6 +220,41 @@ nav .dropdown ul li {
 nav .dropdown ul ul{
     top: 0;
     left: 100%;
+}
+
+.hamburger {
+    position: relative;
+    /* display: block; */
+    width: 35px;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger .ham-bar, .hamburger:after, .hamburger:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: var(--gray);
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: .4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-6px, 8px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-6px, -9px);
+}
+
+.hamburger.is-active .ham-bar {
+    opacity: 0;
 }
 
 /* start SIDE MENU */
@@ -257,13 +287,8 @@ nav .dropdown ul ul{
     font-size: 14px;
 }
 
-/* .sub-list li{
-    display: none;
-} */
-
 .sub-list li a {
     text-decoration: none;
-    /* outline: 1px solid blue; */
 }
 
 .sub-list > .sub-list-title h4 {
@@ -286,7 +311,6 @@ nav .dropdown ul ul{
     justify-content: space-between;
     align-items: center;
     padding: 5px 0;
-    /* outline: 1px solid red; */
 }
 
 .main-list-item ul {
@@ -304,7 +328,6 @@ nav .dropdown ul ul{
 
 .main-list-item > ul {
     padding: 8px 0;
-    /* outline: 1px solid red; */
 }
 
 .sub-list-title a {
@@ -314,7 +337,6 @@ nav .dropdown ul ul{
 
 .no-sub {
     margin: 10px 0;
-    /* outline: 1px solid red; */
 }
 
 .top {
@@ -332,23 +354,13 @@ nav .dropdown ul ul{
 }
 
 .sub-list {
-    /* display: none; */
-    border: 1px solid red;
-} 
-
-
-.sub-list li{
-    /* display: none; */
     /* border: 1px solid red; */
 } 
-
-
 /* end SIDE MENU */
 
 /* END HEADER SECTION */
 
 .main-section {
-    /* border: 1px solid red; */
     margin: 0 auto;
 }
 
@@ -373,6 +385,7 @@ nav .dropdown ul ul{
 h1 span {
     color:#A435F0;
 }
+
 .hero-section .hero-text {
     width: 50%;
 }
@@ -392,6 +405,7 @@ h1 span {
     font-weight: bold;
     font-size: 16px;
 }
+
 .hero-button a {
     color: #ffffff;
     text-decoration: none;
@@ -401,11 +415,9 @@ h1 span {
     background:#5022C3;
     border:1px solid #5022C3;
 }
-
 /* END HERO SECTION */
 
 /* START REVIEWER SECTION */
-
 .reviewer-container{
     /* background: #F0F2F4; */
     min-height: 450px;
@@ -449,7 +461,6 @@ h1 span {
 /* END REVIEWER SECTION */
 
 /* START SOCIAL PROOF SECTION */
-
 .social-proof-container {
     background: #434343;
     min-height: 300px;
@@ -487,11 +498,9 @@ h1 span {
     align-self: center;
     /* outline: 1px solid red; */
 }
-
 /* END SOCIAL PROOF SECTION */
 
 /* START UPSKILL SECTION */
-
 .upskill-container {
     background: #ffffff;
     justify-content: center;
@@ -510,6 +519,7 @@ h1 span {
    font-family: Georgia, 'Times New Roman', Times, serif;
    padding: 0 20px;
 }
+
 .upskill-section p {
     font-size: 19px;
     line-height: 26px;
@@ -577,11 +587,9 @@ h1 span {
     text-overflow: break-word;
     padding-top: 40px;
 }
-
 /* END UPSKILL SECTION */
 
 /* START TESTIMONIAL SECTION */
-
 .testimonial-container {
     background: var(--blue);
     justify-content: center;
@@ -640,11 +648,9 @@ h1 span {
     font-size: 16px;
     line-height: 20px;
 }
-
 /* END TESTIMONIAL SECTION */
 
 /* START TRENDS SECTION */
-
 .trends-container {
     background: #ffffff;
     /* height: 300px; */
@@ -710,11 +716,9 @@ h1 span {
     font-size: 19px;
     margin-left: 15px;
 }
-
 /* END TRENDS SECTION */
 
 /* START LEARNING NEEDS SECTION */
-
 .learning-needs-container {
     background: #F7F9FA;
     justify-content: center;
@@ -752,7 +756,6 @@ h1 span {
     flex: 1;
     align-items: left;
     justify-content: left;
-    /* margin: 0 20px 0 0; */
     padding: 20px;
     vertical-align: top;
 }
@@ -796,16 +799,13 @@ h1 span {
     font-size: 19px;
     margin-left: 0;
 }
-
 /* END LEARNING NEEDS SECTION */
 
 /* START CUSTOMIZED LEARNING SECTION */
-
 .customized-learning-container {
     background: #FFFFFF;
     min-height: 450px;
     justify-content: center;
-    /* margin-bottom: 500px; */
 }
 
 .customized-learning-section {
@@ -813,7 +813,6 @@ h1 span {
     margin: 0 auto;
     text-align: center;
     padding: 50px 20px 0px 20px;
-    /* outline: 1px solid red; */
 }
 
 .customized-learning-section h2 {
@@ -822,13 +821,11 @@ h1 span {
     color: var(--black);
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 35px;
-
 }
 
 .customized-learning-section p {
     font-size: 19px;
     letter-spacing: 0.2px;
-    /* padding: 35px; */
 }
 
 .customized-learning-section .tabs-sub {
@@ -838,7 +835,6 @@ h1 span {
     max-width: 1200px;
     margin: 50px auto;
     padding: 30px;
-    /* outline: 1px solid red; */
 }
 
 .tabs-sub input[type="radio"] {
@@ -850,8 +846,8 @@ h1 span {
     font-weight: bold;
     color: var(--light-gray);
     border-bottom: 2px solid var(--gray86);
-    /* border-bottom: 5px solid red; */
 }
+
 .tabs-sub label span {
     display: none;
 }
@@ -863,7 +859,6 @@ h1 span {
     display: none;
     padding-top: 30px;
     flex-grow: 1;
-    /* outline: 1px solid red; */
 }
 
 .tabs-sub input[type="radio"]:checked + label + .tab {
@@ -888,14 +883,11 @@ h1 span {
     display: flex;
     justify-content: center;
     padding: 50px 0;
-    /* flex: 1; */
 }
 
 .tab-flex-item .text-content {
     text-align: left;
     padding-top: 30px;
-    /* width: 40%; */
-    /* outline: 1px solid red; */
 }
 
 .tabs-sub button {
@@ -913,10 +905,7 @@ h1 span {
 }
 
 .tab-flex-item .img-content {
-
-    padding-right: 30px;
-    /* width: 60%; */
-    
+    padding-right: 30px; 
 }
 
 .tab-flex-item .img-content img {
@@ -924,14 +913,11 @@ h1 span {
     height: auto;
     width: auto\9; /*to comply with IE8*/
     align-self: center;
-    /* outline: 1px solid red; */
 }
-
 /* END CUSTOMIZED LEARNING SECTION */
 
 
 /* START DEMO SECTION */
-
 .demo-container {
     background: var(--purple);
     justify-content: center;
@@ -944,7 +930,6 @@ h1 span {
     text-align: center;
     padding: 60px 50px;
     color: var(--white);
-    /* outline: 1px solid red; */
 }
 
 .demo-section h2 {
@@ -969,6 +954,7 @@ h1 span {
     font-weight: bold;
     font-size: 16px;
 }
+
 .demo-section a {
     color: #ffffff;
     text-decoration: none;
@@ -1002,7 +988,6 @@ h1 span {
     text-align: center;
     padding: 60px 50px;
     color: var(--white);
-    /* outline: 1px solid red; */
 }
 
 .footer-section .top-footer  {
@@ -1018,9 +1003,11 @@ h1 span {
 .footer-section ul {
     list-style: none;
 }
+
 .footer-section ul li {
     padding: 0 0 20px 0;   
 }
+
 .footer-section ul a {
     color: var(--white);
     text-decoration: none;
@@ -1035,16 +1022,13 @@ h1 span {
 }
 .social-icon {
     padding: 20px 10px 20px 5px;
-    /* outline: 1px solid red; */
 }
 
 .right-content img {
-    /* width: 100px; */
     max-width: 100%;
     height: auto;
     width: auto\9; /*to comply with IE8*/
     align-self: center;
-    /* outline: 1px solid red; */
 }
 
 .right-content span {
@@ -1063,11 +1047,9 @@ h1 span {
     text-decoration: none;
     font-size: 14px;
 }
-
 /* END FOOTER SECTION */
 
 /* MEDIA QUERIES */
-
 @media screen and (min-width:768) and (max-width: 1024px) {
     .hero-section .hero-text h1, h1 span {
         font-size: 32px;
@@ -1082,7 +1064,6 @@ h1 span {
     .footer-flex-item {
         margin-top: 20px;
     }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -1092,7 +1073,17 @@ h1 span {
     }
 
     nav {
-        justify-content: center;
+        justify-content: space-between;
+        margin: 10px 0px;
+        /* outline: 1px solid red; */
+    }
+    
+    .hamburger {
+        display: block;
+    }
+
+    .side-menu {
+        /* display: block; */
     }
 
     .demo-container, 
@@ -1162,7 +1153,6 @@ h1 span {
         text-align: left;
     }
 
-
     .tabs-sub .tab-flex-item,
     .tabs-sub label {
         order: initial;
@@ -1174,7 +1164,6 @@ h1 span {
         margin: 5px;
         display: flex;
         justify-content: space-between;
-        /* outline: 1px solid red; */
     }
     .tabs-sub .tab-flex-item .text-content {
         padding-top: 70px;
@@ -1199,11 +1188,8 @@ h1 span {
         width: 100%;
         background: var(--white);
         order: 0;
-        /* display:block; */
         padding-top: 30px;
         flex-grow: 1;
     }
-
-    
 }
 
