@@ -11,5 +11,5 @@ Tech stack used: JavaScript, HTML, CSS
 
 ## Lessons Learned
 - how to code a given design into a live site.
-- how to use flexbox.
+- using CSS flexbox vs using CSS grid.
 - how to implement tabs feature.
