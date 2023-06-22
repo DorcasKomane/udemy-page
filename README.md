@@ -10,3 +10,7 @@ View **live project** here: https://udemy-business-landing-page.netlify.app/
 Tech stack used: JavaScript, HTML, CSS
 
 ## Lessons Learned
+- how to code a given design into a live site.
+- how to use flexbox.
+- how to implement tabs feature.
+- 
