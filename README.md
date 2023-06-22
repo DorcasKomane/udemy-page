@@ -13,4 +13,3 @@ Tech stack used: JavaScript, HTML, CSS
 - how to code a given design into a live site.
 - how to use flexbox.
 - how to implement tabs feature.
-- 
